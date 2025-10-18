@@ -1,0 +1,48 @@
+.datasets {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    
+
+}
+
+.dataset {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c7c7c7;
+    border-radius: 20px;
+    max-width: 242px;
+    gap: 10px;
+}
+
+.dataset-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 25px 60px 25px;
+
+}
+
+.dataset-title {
+    font-size: 16px;
+}
+
+.dataset-desc {
+    font-size: 11px;
+    color: #b8b8b8;
+}
+.dataset-image {
+    width: 240px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+.sep {
+    min-height: 20px;
+    box-shadow: 0 4px 6px -6px #333; 
+}
