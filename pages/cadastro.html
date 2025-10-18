@@ -11,32 +11,28 @@
 </head>
 
 <body>
-        <header>
-            <nav>
-                <ul>
-                    <div>
-                        <li><a href="../index.html"><img src="../img/infovet_img.png" alt="" class="logo-infomed"></a></li>
-                        <li><a href="../pages/datasets.html">Datasets</a></li>
-                        <li><a href="../pages/registros.html">Modelos</a></li>
-                        <li><a href="../pages/planos.html">Planos</a></li>
-                        <li><a href="../pages/api.html">API</a></li>
-                        <li><a href="../pages/documentacao.html">Documentação</a></li>
-                    </div>
-                    <div>
-                        <form id="form_search">
+    <header>
+        <nav>
+            <ul>
+                <div>
+                    <li><a href="../index.html"><img src="../img/infovet_img.png" alt="" class="logo-infomed"></a></li>
+                    <li><a href="../pages/datasets.html">Datasets</a></li>
+                    <li><a href="../pages/registros.html">Modelos</a></li>
+                    <li><a href="../pages/planos.html">Planos</a></li>
+                    <li><a href="../pages/api.html">API</a></li>
+                    <li><a href="../pages/documentacao.html">Documentação</a></li>
+                </div>
+                <div>
+                    <form id="form_search">
 
-                            <input
-                                type="text"
-                                placeholder="Search"
-                                id="input_search"
-                            />
-                            </form>
-                        <li><a href="../pages/login.html">Entrar</a></li>
-                        <li id="cadastro"><a href="../pages/cadastro.html">Cadastrar</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
+                        <input type="text" placeholder="Search" id="input_search" />
+                    </form>
+                    <li><a href="../pages/login.html">Entrar</a></li>
+                    <li id="cadastro"><a href="../pages/cadastro.html">Cadastrar</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div class="form_container">
             <div>
@@ -45,12 +41,30 @@
 
             <form>
                 <div>
-                    <label for="login">Login</label>
+                    <label for="usuarioCadastro">Usuário</label>
+                    <input class="input_login" type="" name="usuarioCadastro" id="usuarioCadastro" required placeholder="Escreva seu usuário" />
+                </div>
+
+                <div>
+                    <label for="emailCadastro">Email</label>
                     <input class="input_login" type="email" name="emailCadastro" id="emailCadastro" required placeholder="Escreva seu email" />
                 </div>
 
                 <div>
-                    <label for="senha">Senha</label>
+                    <label for="codigoCadastro">Código</label>
+                    <div class="codigo_div">
+                        <input class="input_login" type="email" name="codigoCadastro" id="codigoCadastro" required placeholder="Escreva o código recebido" />
+                        <button>Enviar</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="telefoneCadastro">Telefone</label>
+                    <input class="input_login" type="tel" name="telefoneCadastro" id="telefoneCadastro" required placeholder="Escreva seu telefone" />
+                </div>
+
+                <div>
+                    <label for="senhaCadastro">Senha</label>
                     <input class="input_login" type="password" name="senhaCadastro" id="senhaCadastro" required placeholder="Escreva sua senha" />
                 </div>
 
@@ -58,7 +72,7 @@
                     <input class="input_login" type="submit" value="Cadastrar" />
                 </div>
 
-                <div class="forgot-password">
+                <div class="forgot_password">
                     <a href="../index.html">Você é médico?</a>
                 </div>
             </form>
