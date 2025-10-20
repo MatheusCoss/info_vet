@@ -43,9 +43,14 @@ body {
 }
 
 .main-text p {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
+.main-image {
+    flex: 1;
+    max-width: 50%;
+
+}
 
 footer {
     display: flex;
@@ -55,3 +60,4 @@ footer {
     justify-content: center;
     
 }
+

@@ -14,7 +14,7 @@
     flex-direction: column;
     border: 1px solid #c7c7c7;
     border-radius: 20px;
-    max-width: 242px;
+    max-width: 18%;
     gap: 10px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .dataset-title {
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 .dataset-desc {
@@ -35,8 +35,7 @@
     color: #b8b8b8;
 }
 .dataset-image {
-    width: 240px;
-    height: 150px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 
