@@ -13,9 +13,17 @@
     display: flex;
     flex-direction: column;
     border: 1px solid #c7c7c7;
-    border-radius: 20px;
-    max-width: 18%;
+    border-radius: 8%;
+    max-width: 19%;
     gap: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    max-height: 300px;
+}
+
+.dataset:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .dataset-info {
@@ -39,7 +47,8 @@
 }
 .dataset-image {
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
+    max-height: 40%;
+    border-radius: 8% 8% 0px 0px;
 }
 
 
