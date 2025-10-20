@@ -12,32 +12,48 @@
 
 <body>
 
-            <header>
-            <nav>
-                <ul>
-                    <div>
-                        <li><a href="../index.html"><img src="../img/infovet_img.png" alt="" class="logo-infomed"></a></li>
-                        <li><a href="../pages/datasets.html">Datasets</a></li>
-                        <li><a href="../pages/registros.html">Modelos</a></li>
-                        <li><a href="../pages/planos.html">Planos</a></li>
-                        <li><a href="../pages/api.html">API</a></li>
-                        <li><a href="../pages/documentacao.html">Documentação</a></li>
+    <header>
+        <nav>
+            <ul>
+                <div>
+                    <div id="hamburguer" class="hamburguer">
+                        <span>☰</span>
                     </div>
-                    <div>
-                        <form id="form_search">
+                    <li><a href="../index.html"><img src="../img/infovet_img.png" alt="" class="logo-infomed"></a></li>
+                    <li><a href="../pages/datasets.html">Datasets</a></li>
+                    <li><a href="../pages/registros.html">Modelos</a></li>
+                    <li><a href="../pages/planos.html">Planos</a></li>
+                    <li><a href="../pages/api.html">API</a></li>
+                    <li><a href="../pages/documentacao.html">Documentação</a></li>
+                </div>
+                <div>
+                    <form id="form_search">
 
-                            <input
-                                type="text"
-                                placeholder="Search"
-                                id="input_search"
-                            />
-                            </form>
-                        <li><a href="../pages/login.html">Entrar</a></li>
-                        <li id="cadastro"><a href="../pages/cadastro.html">Cadastrar</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
+                        <input type="text" placeholder="Search" id="input_search" />
+                    </form>
+                    <li><a href="../pages/login.html">Entrar</a></li>
+                    <li id="cadastro"><a href="../pages/cadastro.html">Cadastrar</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="sidebar">
+        <div id="button_close_sidebar">
+            <span>X</span>
+        </div>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../pages/datasets.html">Datasets</a></li>
+            <li><a href="../pages/registros.html">Modelos</a></li>
+            <li><a href="../pages/planos.html">Planos</a></li>
+            <li><a href="../pages/api.html">API</a></li>
+            <li><a href="../pages/documentacao.html">Documentação</a></li>
+            <li><a href="../pages/login.html">Entrar</a></li>
+            <li><a href="../pages/cadastro.html">Cadastrar</a></li>
+        </ul>
+    </div>
+
 
     <main>
         <div class="form_container">
@@ -48,12 +64,14 @@
             <form>
                 <div>
                     <label for="login">Login</label>
-                    <input class="input_login" type="text" name="login" id="login" required placeholder="Entre com seu usuário ou email" />
+                    <input class="input_login" type="text" name="login" id="login" required
+                        placeholder="Entre com seu usuário ou email" />
                 </div>
 
                 <div>
                     <label for="senha">Senha</label>
-                    <input class="input_login" type="password" name="senha" id="senha" required placeholder="Entre com sua senha" />
+                    <input class="input_login" type="password" name="senha" id="senha" required
+                        placeholder="Entre com sua senha" />
                 </div>
 
                 <div id="input_submit_container">
@@ -67,5 +85,7 @@
         </div>
     </main>
 </body>
+
+<script src="../js/headerSidebar.js"></script>
 
 </html>
