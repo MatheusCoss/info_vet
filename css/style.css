@@ -43,13 +43,12 @@ body {
 }
 
 .main-text p {
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 .main-image {
     flex: 1;
     max-width: 50%;
-
 }
 
 footer {
@@ -61,3 +60,6 @@ footer {
     
 }
 
+h2 {
+    font-size: 1.5vw;
+}
