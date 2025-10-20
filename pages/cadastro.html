@@ -39,10 +39,10 @@
                 <img src="../img/infovet_img.png" alt="">
             </div>
 
-            <form>
+            <form onsubmit="return validarCadastro()">
                 <div>
                     <label for="usuarioCadastro">Usuário</label>
-                    <input class="input_login" type="" name="usuarioCadastro" id="usuarioCadastro" required placeholder="Escreva seu usuário" />
+                    <input class="input_login" type="text" name="usuarioCadastro" id="usuarioCadastro" required placeholder="Escreva seu usuário" />
                 </div>
 
                 <div>
@@ -53,23 +53,23 @@
                 <div>
                     <label for="codigoCadastro">Código</label>
                     <div class="codigo_div">
-                        <input class="input_login" type="email" name="codigoCadastro" id="codigoCadastro" required placeholder="Escreva o código recebido" />
+                        <input class="input_login" type="number" name="codigoCadastro" id="codigoCadastro" required placeholder="Escreva o código recebido" />
                         <button>Enviar</button>
                     </div>
                 </div>
 
                 <div>
                     <label for="telefoneCadastro">Telefone</label>
-                    <input class="input_login" type="tel" name="telefoneCadastro" id="telefoneCadastro" required placeholder="Escreva seu telefone" />
+                    <input class="input_login" type="tel" name="telefoneCadastro" id="telefoneCadastro" required placeholder="11111111111" minlength="11" maxlength="11" />
                 </div>
 
                 <div>
                     <label for="senhaCadastro">Senha</label>
-                    <input class="input_login" type="password" name="senhaCadastro" id="senhaCadastro" required placeholder="Escreva sua senha" />
+                    <input class="input_login" type="password" name="senhaCadastro" id="senhaCadastro" required placeholder="Escreva sua senha" minlength="10"/>
                 </div>
 
                 <div id="input_submit_container">
-                    <input class="input_login" type="submit" value="Cadastrar" />
+                    <input class="input_login" type="submit" value="Cadastrar"/>
                 </div>
 
                 <div class="forgot_password">
@@ -78,6 +78,7 @@
             </form>
         </div>
     </main>
+    <script src="../js/form.js"></script>
 </body>
 
 </html>
