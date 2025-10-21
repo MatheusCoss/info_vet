@@ -3,6 +3,9 @@ header {
     background-color: white;
     display: flex;
     top: 0;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
 }
 
 
