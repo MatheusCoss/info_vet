@@ -8,7 +8,9 @@ main {
    align-items: center;
    padding: 20px;
    height: 100vh;
-   margin-top: 40px;
+   margin-top: 150px;
+   margin-bottom: 60px;
+
 }
 
 .form_container {
