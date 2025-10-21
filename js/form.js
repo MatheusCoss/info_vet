@@ -8,7 +8,7 @@ function validarCadastro(){
 
     let valorNumero = document.getElementById('telefoneCadastro').value
     if (valorNumero < 0 || isNaN(valorNumero)){
-        alert("Número invalido");
+        alert("Número de telefone invalido");
         return false;
     }
 
