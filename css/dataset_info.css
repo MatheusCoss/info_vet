@@ -67,6 +67,21 @@ hr {
 }
 
 
+.arquivos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-button {
+    background-color: #1D1D1D;
+    width: 200px;
+    height: 36px;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
 
 .pen-icon {
     width: 24px;
