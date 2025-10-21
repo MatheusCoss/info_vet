@@ -2,14 +2,73 @@ header {
     width: 100%;
     background-color: white;
     display: flex;
+
+    position: sticky;
     top: 0;
+    z-index: 1000;
+    box-shadow: none;
+   
 }
 
 
+#cadastro {
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+#cadastro > a { color: inherit; } 
 
-header a {
+
+
+header a { 
     font-weight: bold;
 }
+
+
+.btn-header {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 20px;       
+  border-radius: 999px;       
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1;
+  vertical-align: middle;
+  border: 2px solid #000;     
+  transition: background-color .6s ease, color .6s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+
+#btn-entrar {
+  background: #fff;
+  color: #000;
+}
+#btn-entrar:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+
+#btn-cadastrar {
+  background: #000;
+  color: #fff;
+}
+#btn-cadastrar:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-2px);   
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+
+.btn-header:active {
+  transform: scale(.96);
+  box-shadow: none;
+}
+
+
 
 nav {
     width: 100%;
@@ -77,68 +136,4 @@ li > a {
 
 .logo-infomed {
     width: 115px;
-}
-
-.hamburguer{
-    display: none;
-    margin-right: 30px;
-    font-size: 1.5rem;
-} 
-
-#sidebar {
-    display: flex;
-    flex-direction: column; 
-    position: fixed;
-    top: 0;
-    left: -250px; 
-    width: 250px; 
-    height: 100vh;
-    background-color: white;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    transition: left 0.3s ease;
-    padding-top: 20px; 
-}
-
-#sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; 
-    width: 100%;
-}
-
-#sidebar ul li {
-    padding: 15px 20px;
-    border-bottom: 1px solid #ccc;
-}
-
-#sidebar ul li a {
-    display: block; 
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    width: 100%;
-}
-
-#sidebar.show_sidebar {
-    left: 0;
-}
-
-
-#button_close_sidebar{
-    font-size: 1.5rem;
-    display: flex;
-    margin: 10px;
-    padding: 10px;
-}
-
-@media (max-width: 768px) {
-    .hamburguer{
-        display: block;
-    }
-
-    nav ul li, nav ul input, #form_search{
-        display: none;
-    }
 }
