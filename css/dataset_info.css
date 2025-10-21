@@ -73,6 +73,7 @@ hr {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .info-card {
