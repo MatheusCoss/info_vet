@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infovet</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/datasets.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="datasets.css">
     <link rel="icon" href="img/icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     
-        <header>
+     <header>
         <nav>
             <ul>
                 <div>
@@ -30,29 +32,14 @@
 
                         <input type="text" placeholder="Pesquisar" id="input_search" />
                     </form>
-                    <li><a href="../pages/login.html">Entrar</a></li>
-                    <li id="cadastro"><a href="../pages/cadastro.html">Cadastrar</a></li>
+                    <li><a href="../pages/login.html" class="btn-header" id="btn-entrar">Entrar</a></li>
+                    <li id="cadastro"><a href="../pages/cadastro.html" class="btn-header" id="btn-cadastrar">Cadastrar</a></li>
                 </div>
             </ul>
         </nav>
     </header>
 
-    <div id="sidebar">
-        <div id="button_close_sidebar">
-            <span>X</span>
-        </div>
-        <ul>
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="../pages/datasets.html">Datasets</a></li>
-            <li><a href="../pages/registros.html">Modelos</a></li>
-            <li><a href="../pages/planos.html">Planos</a></li>
-            <li><a href="../pages/api.html">API</a></li>
-            <li><a href="../pages/documentacao.html">Documentação</a></li>
-            <li><a href="../pages/login.html">Entrar</a></li>
-            <li><a href="../pages/cadastro.html">Cadastrar</a></li>
-        </ul>
-    </div>  
-
+    
         <main>
             <section class="sec-1">
                 <div class="main-text">
@@ -154,11 +141,33 @@
 
         </main>
 
-        <footer>
-            <img src="img/infovet_img.png" alt="" class="logo-infomed">
-            <p>Create by Matheus, Marcos, Giovanni</p>
-            
-        </footer>
+<footer class="site-footer">
+  <div class="footer-content">
+    
+    <div class="footer-logo">
+     <img src="img/infovet_img.png" alt="Logo Info.vet">
+    </div>
+
+    
+    <div class="footer-info">
+      <div class="footer-contacts">
+        <h3>Contate-nos:</h3>
+        <div class="contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/5511999999999" target="_blank">+55 (11) 93904-5955</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <a href="https://www.linkedin.com/company/infovet" target="_blank">https://www.linkedin.com/in/matheus-costa-a5b923229/</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Created by Matheus, Marcos, Giovanni</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
     <script src="js/headerSidebar.js"></script>
 </body>
