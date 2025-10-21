@@ -57,7 +57,7 @@ hr {
 
 .download-button {
     background-color: #1D1D1D;
-    width: 45%;
+    width: 60%;
     height: 36px;
     font-weight: bold;
     color: white;
@@ -66,16 +66,11 @@ hr {
     cursor: pointer;
 }
 
-.lixeira-button {
-    display: flex;
-    width: 10%;
-    border: none;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
 
+
+.pen-icon {
+    width: 24px;
+}
 .info-card {
     align-items: center;
     gap: 10px;
@@ -111,13 +106,3 @@ hr {
     font-size: 16px;
 }
 
-
-
-table, td, th {
-  border: 1px solid;
-  padding: 10px;
-}
-
-table {
-  border-collapse: collapse;
-}
