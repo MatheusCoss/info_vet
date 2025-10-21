@@ -7,9 +7,12 @@ header {
 
 
 
+
 header a {
     font-weight: bold;
 }
+
+
 
 nav {
     width: 100%;
@@ -45,16 +48,7 @@ li > a {
     color: black;
  }
 
-#cadastro{
-    background-color: black;
-    border-radius: 20px;
-    color: white;
-    padding: 10px;
-}
 
-#cadastro > a{
-    color: white;
-}
 
 #form_search{
     display: flex;
@@ -133,7 +127,7 @@ li > a {
     padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1240px) {
     .hamburguer{
         display: block;
     }
@@ -141,4 +135,47 @@ li > a {
     nav ul li, nav ul input, #form_search{
         display: none;
     }
+}
+
+
+.btn-header {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 20px;       
+  border-radius: 999px;       
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1;
+  vertical-align: middle;
+  border: 2px solid #000;     
+  transition: background-color .6s ease, color .6s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+#btn-entrar {
+  background: #fff;
+  color: #000;
+}
+#btn-entrar:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+
+#btn-cadastrar {
+  background: #000;
+  color: #fff;
+}
+#btn-cadastrar:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-2px);   
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+
+.btn-header:active {
+  transform: scale(.96);
+  box-shadow: none;
 }

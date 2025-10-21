@@ -8,74 +8,105 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/datasets.css">
     <link rel="stylesheet" href="../css/dataset_info.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="icon" href="../img/icon.svg">
 
 </head>
 <body>
-    <header>
-            <nav>
-                <ul>
-                    <div>
-                        <li><a href="../index.html"><img src="../img/infovet_img.png" alt="" class="logo-infomed"></a></li>
-                        <li><a href="../pages/datasets.html">Datasets</a></li>
-                        <li><a href="../pages/registros.html">Modelos</a></li>
-                        <li><a href="../pages/planos.html">Planos</a></li>
-                        <li><a href="../pages/api.html">API</a></li>
-                        <li><a href="../pages/documentacao.html">Documentação</a></li>
-                    </div>
-                    <div>
-                        <form id="form_search">
-
-                            <input type="text" placeholder="Pesquisar" id="input_search" />
-                            </form>
-                        <li><a href="../pages/login.html">Entrar</a></li>
-                        <li id="cadastro"><a href="../pages/cadastro.html">Cadastrar</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <div class="info">
-                <div class="cab-info">
-                    <div class="info-container">
-                        <div class="flex dataset-name">
-                            <h2>Criptococose no Brasil em 2025</h2>
-                            <button class="public">Público</button>
-                        </div>
-                        <div class="flex info-card">
-                            <img src="../img/avatar.png" alt="" class="avatar">
-                            <p>Por Camila · 100 downloads · Json · 11k registros</p>
-                        </div>
-                    </div>
+    <div class="container">
+        <header>
+           <nav>
+               <ul>
+                   <div>
+                       <div id="hamburguer" class="hamburguer">
+                           <span>☰</span>
+                       </div>
+                       <li><a href="../index.html"><img src="../img/infovet_img.png" alt="" class="logo-infomed"></a></li>
+                       <li><a href="../pages/datasets.html">Datasets</a></li>
+                       <li><a href="../pages/registros.html">Modelos</a></li>
+                       <li><a href="../pages/planos.html">Planos</a></li>
+                       <li><a href="../pages/api.html">API</a></li>
+                       <li><a href="../pages/documentacao.html">Documentação</a></li>
+                   </div>
+                   <div>
+                       <form id="form_search">
     
-                    <div>
-                        <button class="tag">Cachorro</button>
-                        <button class="tag">Brasil</button>
-                        <button class="tag">Criptcocose</button>
-                    </div>
-                </div>
-                
-                <div class="cab-download">
-                    <img src="../img/datasets/dataset_1.png" alt="" class="dataset-image-info">
+                           <input type="text" placeholder="Pesquisar" id="input_search" />
+                       </form>
+                       <li><a href="../pages/login.html" class="btn-header" id="btn-entrar">Entrar</a></li>
+                       <li id="cadastro"><a href="../pages/cadastro.html" class="btn-header" id="btn-cadastrar">Cadastrar</a></li>
+                   </div>
+               </ul>
+           </nav>
+       </header>
     
-                    <div class="dataset-options">
-                        <button class="download-button">Download</button>
-                        <button class="lixeira-button"><img src="../img/trash.svg" alt="" class="trash-icon"></button>
+            <main>
+                <div class="info">
+                    <div class="cab-info">
+                        <div class="info-container">
+                            <div class="flex dataset-name">
+                                <h2>Criptococose no Brasil em 2025</h2>
+                                <button class="public">Público</button>
+                            </div>
+                            <div class="flex info-card">
+                                <img src="../img/avatar.png" alt="" class="avatar">
+                                <p>Por Camila · 100 downloads · Json · 11k registros</p>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <button class="tag">Cachorro</button>
+                            <button class="tag">Brasil</button>
+                            <button class="tag">Criptcocose</button>
+                        </div>
                     </div>
                     
-                </div>
-
-            </div>
-            <hr>
-            <div class="desc">
-                <p>
-Este conjunto de dados consolida as informações de casos de criptococose notificados em todo o território brasileiro durante o ano de 2025. O dataset foi compilado a partir do Sistema de Informação de Agravos de Notificação (SINAN), enriquecido com dados do Sistema de Informações sobre Mortalidade (SIM) e da Rede Nacional de Laboratórios de Saúde Pública (LACEN). O objetivo é fornecer um panorama detalhado sobre a epidemiologia da doença, incluindo perfil demográfico e clínico dos pacientes, distribuição geográfica dos casos, métodos diagnósticos, espécies de Cryptococcus envolvidas, e desfechos clínicos. Os dados são anonimizados para garantir a privacidade dos pacientes.</p>
-                <p>Palavras-Chave: Criptococose, Cryptococcus neoformans, Cryptococcus gattii, Epidemiologia, Vigilância em Saúde Pública, Brasil, Micoses Sistêmicas, Meningite Fúngica, Doenças Negligenciadas.</p>
-            </div>
-            <hr>
-
-        </main>
+                    <div class="cab-download">
+                        <img src="../img/datasets/dataset_1.png" alt="" class="dataset-image-info">
+        
+                        <div class="dataset-options">
+                            <button class="download-button">Download</button>
+                            <button class="lixeira-button"><img src="../img/trash.svg" alt="" class="trash-icon"></button>
+                        </div>
+                        
+                    </div>
     
+                </div>
+                <hr>
+                <div class="desc">
+                    <p>
+    Este conjunto de dados consolida as informações de casos de criptococose notificados em todo o território brasileiro durante o ano de 2025. O dataset foi compilado a partir do Sistema de Informação de Agravos de Notificação (SINAN), enriquecido com dados do Sistema de Informações sobre Mortalidade (SIM) e da Rede Nacional de Laboratórios de Saúde Pública (LACEN). O objetivo é fornecer um panorama detalhado sobre a epidemiologia da doença, incluindo perfil demográfico e clínico dos pacientes, distribuição geográfica dos casos, métodos diagnósticos, espécies de Cryptococcus envolvidas, e desfechos clínicos. Os dados são anonimizados para garantir a privacidade dos pacientes.</p>
+                    <p>Palavras-Chave: Criptococose, Cryptococcus neoformans, Cryptococcus gattii, Epidemiologia, Vigilância em Saúde Pública, Brasil, Micoses Sistêmicas, Meningite Fúngica, Doenças Negligenciadas.</p>
+                </div>
+                <hr>
+    
+            </main>
+    
+
+    </div>
+
+    <footer>
+
+        
+        <div class="footer-logo">
+            <img src="../img/infovet_img.png" class="logo-footer">
+        </div>
+
+        
+        <div class="footer-info">
+            <div class="footer-bottom">
+                <p>Created by Matheus, Marcos, Giovanni</p>
+            </div>
+        </div>
+
+        <div class="cont-icons">
+            <a href=""><img src="../img/zap.svg" class="cont-icon" alt=""></a>
+            <a href=""><img src="../img/linkedin.svg" class="cont-icon" alt=""></a>
+            <a href=""><img src="../img/insta.svg" class="cont-icon" alt=""></a>
+        </div>
+    
+    </footer>
+
+
 </body>
 </html>
