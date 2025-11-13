@@ -3,7 +3,10 @@ header {
     background-color: white;
     display: flex;
     margin-bottom: 50px;
-
+    position: sticky;
+    z-index: 1000;
+    left: 0;
+    top: 0;
 }
 
 
