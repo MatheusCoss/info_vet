@@ -2,7 +2,7 @@ header {
     width: 100%;
     background-color: white;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     position: sticky;
     z-index: 1000;
     left: 0;

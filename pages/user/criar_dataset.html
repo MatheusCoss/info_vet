@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Info.vet</title>
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/formLogin.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <title>Editar arquivo</title>
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/user/create_dataset.css">
 </head>
 
 <body>
@@ -55,35 +55,34 @@
             </div>
         
         
-            <main id="login_main">
-                <div class="form_container">
+           
+            <div class="form_dataset">
                     <div>
-                        <img src="../img/infovet_img.png" alt="">
+                        <h1>Editar arquivo</h1>
                     </div>
         
-                    <form id="formLogin" method="post">
+                    <form>
                         <div>
-                            <label for="login">Login</label>
-                            <input class="input_login" type="text" name="login" id="login" required
-                                placeholder="Entre com seu usuário ou email" />
+                            <label for="nomeArquivo">Nome</label>
+                            <input class="input_login" type="text" name="nomeArquivo" id="nomeArquivo" required
+                                placeholder="Edite o nome do arquivo" />
                         </div>
+
+
         
                         <div>
-                            <label for="senha">Senha</label>
-                            <input class="input_login" type="password" name="senha" id="senha" required
-                                placeholder="Entre com sua senha" />
+                            <label for="arquivo">Arquivo</label>
+                            <input class="input_login" type="file" name="arquivo" id="arquivo" required
+                                placeholder="Edite o arquivo" />
                         </div>
         
                         <div id="input_submit_container">
-                            <input class="input_login" type="submit" value="Entrar" />
+                            <input class="input_login" type="submit" value="Editar" />
                         </div>
         
-                        <div class="forgot_password">
-                            <a href="#">Esqueceu sua senha?</a>
-                        </div>
                     </form>
-                </div>
-            </main>
+            </div>
+          
 
     </div>
 
@@ -91,7 +90,7 @@
 
         
         <div class="footer-logo">
-            <img src="../img/infovet_img.png" class="logo-footer">
+            <img src="../../img/infovet_img.png" class="logo-footer">
         </div>
 
         
@@ -102,9 +101,9 @@
         </div>
 
         <div class="cont-icons">
-            <a href=""><img src="../img/zap.svg" class="cont-icon" alt=""></a>
-            <a href=""><img src="../img/linkedin.svg" class="cont-icon" alt=""></a>
-            <a href=""><img src="../img/insta.svg" class="cont-icon" alt=""></a>
+            <a href=""><img src="../../img/zap.svg" class="cont-icon" alt=""></a>
+            <a href=""><img src="../../img/linkedin.svg" class="cont-icon" alt=""></a>
+            <a href=""><img src="../../img/insta.svg" class="cont-icon" alt=""></a>
         </div>
     
     </footer>
@@ -112,5 +111,5 @@
 </body>
 
 <script src="../js/headerSidebar.js"></script>
-<script src="../js/login.js"></script>
+
 </html>

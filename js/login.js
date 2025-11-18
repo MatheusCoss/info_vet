@@ -17,7 +17,9 @@ document.getElementById("formLogin").addEventListener("submit", async function (
         const data = await resp.json();
         console.log("Login OK:", data);
 
+        sessionStorage.setItem("login_id", data.id);
         window.location.href = "../index.html";
+    
     } else {
         alert("Login ou senha incorretos");
     }

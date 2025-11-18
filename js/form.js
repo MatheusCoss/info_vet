@@ -12,7 +12,17 @@ function validarCadastro(){
 
 
 async function cadastrar() {
-    if (!validarCadastro()) return false;
+    console.log("Aasdasdasd")
+
+}
+
+
+const meuFormulario = document.getElementById('meuFormulario');
+
+
+
+meuFormulario.addEventListener('submit', async function(event) {
+    event.preventDefault();
 
     const usuario = {
         login: document.getElementById("usuarioCadastro").value,
@@ -21,6 +31,7 @@ async function cadastrar() {
         nome: "",
     };
 
+    
     try {
         const response = await fetch("http://localhost:8080/usuarios", {
             method: "POST",
@@ -29,6 +40,7 @@ async function cadastrar() {
         });
 
         console.log("STATUS:", response.status);
+        
 
         if (response.status >= 200 && response.status < 300) {
             alert("Cadastro realizado com sucesso!");
@@ -42,4 +54,8 @@ async function cadastrar() {
         alert("Erro de conexão com o servidor.");
         console.error("Erro no fetch:", error);
     }
-}
+
+
+    
+
+});
