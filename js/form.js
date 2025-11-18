@@ -11,11 +11,6 @@ function validarCadastro(){
 }
 
 
-async function cadastrar() {
-    console.log("Aasdasdasd")
-
-}
-
 
 const meuFormulario = document.getElementById('meuFormulario');
 

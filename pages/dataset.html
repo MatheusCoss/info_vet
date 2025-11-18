@@ -43,12 +43,12 @@
                     <div class="cab-info">
                         <div class="info-container">
                             <div class="flex dataset-name">
-                                <h2>Criptococose no Brasil em 2025</h2>
+                                <h2 id="nome-dataset">Criptococose no Brasil em 2025</h2>
                                 <button class="public">Público</button>
                             </div>
                             <div class="flex info-card">
                                 <img src="../img/avatar.png" alt="" class="avatar">
-                                <p>Por Camila · 100 downloads · Json · 11k registros</p>
+                                <p>Por <span id="autor-dataset"></span> · 100 downloads · Json · 11k registros</p>
                             </div>
                         </div>
         
@@ -68,13 +68,14 @@
                         </div>
                         
                     </div>
+
+                
     
                 </div>
                 <hr>
                 <div class="desc">
-                    <p>
+                    <p id="desc-dataset">
     Este conjunto de dados consolida as informações de casos de criptococose notificados em todo o território brasileiro durante o ano de 2025. O dataset foi compilado a partir do Sistema de Informação de Agravos de Notificação (SINAN), enriquecido com dados do Sistema de Informações sobre Mortalidade (SIM) e da Rede Nacional de Laboratórios de Saúde Pública (LACEN). O objetivo é fornecer um panorama detalhado sobre a epidemiologia da doença, incluindo perfil demográfico e clínico dos pacientes, distribuição geográfica dos casos, métodos diagnósticos, espécies de Cryptococcus envolvidas, e desfechos clínicos. Os dados são anonimizados para garantir a privacidade dos pacientes.</p>
-                    <p>Palavras-Chave: Criptococose, Cryptococcus neoformans, Cryptococcus gattii, Epidemiologia, Vigilância em Saúde Pública, Brasil, Micoses Sistêmicas, Meningite Fúngica, Doenças Negligenciadas.</p>
                 </div>
                 <hr>
 
@@ -134,5 +135,6 @@
     </footer>
 
 <script src="../js/dataset.js"></script>
+<script src="../js/carregar_dataset.js"></script>
 </body>
 </html>

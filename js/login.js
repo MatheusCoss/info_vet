@@ -18,6 +18,9 @@ document.getElementById("formLogin").addEventListener("submit", async function (
         console.log("Login OK:", data);
 
         sessionStorage.setItem("login_id", data.id);
+        sessionStorage.setItem("login_name", data.login);
+        sessionStorage.setItem("logado", true);
+
         window.location.href = "../index.html";
     
     } else {

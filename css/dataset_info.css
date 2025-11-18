@@ -84,8 +84,11 @@ hr {
 }
 
 .pen-icon {
-    width: 24px;
+    width: 32px;
 }
+
+
+
 .info-card {
     align-items: center;
     gap: 10px;
